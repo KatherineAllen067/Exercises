@@ -9,8 +9,9 @@ int product(int a, int b){
     return sum;
 }
 //this is linear time because it touches all nodes
-// comparing a and b
-// runtime would = 0(ab) 
+// comparing a and b 
+//but only iterates through b
+// runtime would = 0(b) 
 
 int power(int a, int b){
     if (b < 0){
@@ -23,4 +24,5 @@ int power(int a, int b){
 }
 //need to find runtime of a to the power of b
 //this is recursion from b to b-1 to b-2 down to 1 
-// runtime would be 0(n)
+//only iterates for b calls 
+// runtime would be 0(b)
