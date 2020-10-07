@@ -31,7 +31,7 @@
 //JS 
 // Given an array of integers, find the one that appears an odd number of times.
 // There will always be only one integer that appears an odd number of times.
-numbers= [ 2, 3, 4, 7, 3, 9, 1, 6, 3, 8, 5]
+numbers= [ 2, 2, 3, 4, 4, 4, 4, 7, 7, 3, 9, 9, 9, 9, 9, 9, 1, 1, 6, 6, 3, 8, 8, 8, 8, 5, 5 ]
 // console.log(numbers)
 
 //for each index loop through and check if it exists in the new Arr
@@ -54,3 +54,4 @@ function findOdd(numbers){
     }
 }
 console.log(findOdd(numbers));
+//returns index of the value found odd amount of times
