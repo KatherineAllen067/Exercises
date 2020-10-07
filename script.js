@@ -33,10 +33,9 @@
 // There will always be only one integer that appears an odd number of times.
 numbers= [ 2, 2, 3, 4, 4, 4, 4, 7, 7, 3, 9, 9, 9, 9, 9, 9, 1, 1, 6, 6, 3, 8, 8, 8, 8, 5, 5 ]
 // console.log(numbers)
-
-//for each index loop through and check if it exists in the new Arr
-//check if the number is repeated 
+//check if the number is repeated only an odd number of times 
 function findOdd(numbers){
+    //set a count to number of times it appears
     var count = 0;
     //loop through numbers
     for(var i=0; i< numbers.length; i++){
