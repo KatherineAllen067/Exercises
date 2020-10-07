@@ -42,15 +42,29 @@ function findOdd(numbers){
         //loop through numbers again
         for(var d=0; d< numbers.length; d++){
             //compare iterators if equal count
-            if(numbers[i] == numbers[d]){
+            if(numbers[i] === numbers[d]){
                 count++
             }
         }
         //if the count is an odd value return the iterator with the odd value
-        if(count  % 2 !=0){
+        if(count % 2 == 1){
             return[i]
         }
     }
 }
 console.log(findOdd(numbers));
 //returns index of the value found odd amount of times
+
+// #Find the missing letter
+
+// Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
+
+// You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.
+// The array will always contain letters in only one case.
+
+// Example:
+
+// ['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
+
+// ["a","b","c","d","f"] -> "e"
+// ["O","Q","R","S"] -> "P"
