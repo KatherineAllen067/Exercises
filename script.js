@@ -104,3 +104,34 @@ function sum(range){
         
   }return total
 }
+
+//function that takes an array as argument and produces a new array that has the same elements in the inverse order
+function reverseArray(array){
+    //create new array
+    arr=[];
+    //push the reverse array to the new arr
+    arr.push(array.reverse());
+    return arr;
+}
+
+//now without the reverse method
+function reverseArray(array){
+    arr=[];
+    //start the loop at the length -1 and decrement 
+    for (var i= array.length-1; i >=0; i--){
+        arr.push(array[i])
+    }
+    return arr;
+}
+function reverseArrayInPlace(arrayValue){
+    //iterate through the array divided by 2 
+    for(var i=0; i <= arrayValue.length/2; i++){
+      //set i value to change 
+      let change= arrayValue[i];
+      //change will update after iterating 
+      //will now be the the length minus one and i 
+      arrayValue[i]= arrayValue[arrayValue.length-1 -i];
+      //then the change is updated for the next iteration
+      arrayValue[arrayValue.length-1 -i]= change; 	
+    }return arrayValue	
+  }
