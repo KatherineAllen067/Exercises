@@ -123,6 +123,8 @@ function reverseArray(array){
     }
     return arr;
 }
+
+//this works for even number of iterators for odd number the two middle iterators will switch
 function reverseArrayInPlace(arrayValue){
     //iterate through the array divided by 2 
     for(var i=0; i <= arrayValue.length/2; i++){
