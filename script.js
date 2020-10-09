@@ -77,16 +77,30 @@ function range(start, end, increment){
     array=[]
     var current= start;
     increment = increment || 1;
+    //iterate by one value up 
     if(increment > 0){
+        //keep iterating if the end is less then the start/current not just < we want to include the end value in the array
       while(current <= end){
       array.push(current)
         current+=increment;
       }
     }else{
-            while(current >=end){
-          array.push(current)
-            current+=increment;
-          }
+        //iterate while the current/start is great then end if the increment is negative 
+        while(current >= end){
+        array.push(current)
+        current+=increment;
+        }
     }
     return array;  
   }
+
+// create a function that sums all iterators 
+function sum(range){
+    //create a value to hold the total itertators
+    total=0;
+  for(var i in range){
+      //add the value of the right to the variable 
+        total += range[i]
+        
+  }return total
+}
