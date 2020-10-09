@@ -68,3 +68,25 @@ console.log(findOdd(numbers));
 
 // ["a","b","c","d","f"] -> "e"
 // ["O","Q","R","S"] -> "P"
+
+
+
+//eloquentjavascript chapter questions
+// #4 create a range function that takes a start and end and returns and array
+function range(start, end, increment){
+    array=[]
+    var current= start;
+    increment = increment || 1;
+    if(increment > 0){
+      while(current <= end){
+      array.push(current)
+        current+=increment;
+      }
+    }else{
+            while(current >=end){
+          array.push(current)
+            current+=increment;
+          }
+    }
+    return array;  
+  }
