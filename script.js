@@ -108,12 +108,15 @@ for(var numbers=0; numbers < 100; numbers++){
 let size=8;
 let pattern="";
 for(var i=0; i < size; i++){
+  //first loop iterates for the shape of the board 
       for(var b=0; b < size; b++){
+        //second loop find the pattern if the remainder is even or odd and prints the pattern
         if ((i + b) % 2 == 0 ){
         pattern += " "
         }else {
         	pattern += "#"
         }
+        //then skip to the next row after size
       }pattern +="\n"
 }console.log(pattern)
 
