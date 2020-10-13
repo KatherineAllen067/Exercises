@@ -72,6 +72,22 @@ console.log(findOdd(numbers));
 
 
 //eloquentjavascript chapter questions
+// #2 questions
+// Write a loop that makes seven calls to console.log to output the following triangle:
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+let blocks=""
+//blocks is an empty string to start 
+for(var triangle=0; triangle < 7; triangle= triangle + 1){
+  //add a block for each iteration of the triangle
+	console.log(blocks+="#")
+}
+
 // #4 create a range function that takes a start and end and returns and array
 function range(start, end, increment){
     array=[]
@@ -137,3 +153,14 @@ function reverseArrayInPlace(arrayValue){
       arrayValue[arrayValue.length-1 -i]= change; 	
     }return arrayValue	
   }
+
+// function arrayToList that builds up a list structure like the one shown when given [1, 2, 3] as argument
+function arrayToList(){
+	list={
+      value:x,
+        rest:{}
+    };
+  	for (var i= array.length-1; i >=0; i--){
+    	
+    }
+}
