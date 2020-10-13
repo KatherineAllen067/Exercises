@@ -104,6 +104,19 @@ for(var numbers=0; numbers < 100; numbers++){
     	console.log("Fizz")
 }
 
+//making a chess board
+let size=8;
+let pattern="";
+for(var i=0; i < size; i++){
+      for(var b=0; b < size; b++){
+        if ((i + b) % 2 == 0 ){
+        pattern += " "
+        }else {
+        	pattern += "#"
+        }
+      }pattern +="\n"
+}console.log(pattern)
+
 
 
 // #4 create a range function that takes a start and end and returns and array
