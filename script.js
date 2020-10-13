@@ -88,6 +88,24 @@ for(var triangle=0; triangle < 7; triangle= triangle + 1){
 	console.log(blocks+="#")
 }
 
+// Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+// When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
+for(var numbers=0; numbers < 100; numbers++){
+  //check for numbers that hold both conditions first
+	if(numbers % 3 && numbers % 5){
+    	console.log("FizzBuzz")
+    }
+    //check for numbers that hold the condition for the larger number 
+  	else if(numbers % 5){
+    	console.log("Buzz")
+    }
+    //then check condition for the smaller number
+  	else(numbers % 3)
+    	console.log("Fizz")
+}
+
+
+
 // #4 create a range function that takes a start and end and returns and array
 function range(start, end, increment){
     array=[]
